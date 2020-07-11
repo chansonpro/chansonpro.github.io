@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://chanson_pro.gitee.io/"/>
-  <updated>2020-07-11T15:39:31.780Z</updated>
+  <updated>2020-07-11T15:46:24.550Z</updated>
   <id>http://chanson_pro.gitee.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://chanson_pro.gitee.io/hello-world/"/>
     <id>http://chanson_pro.gitee.io/hello-world/</id>
     <published>2020-07-11T15:39:08.000Z</published>
-    <updated>2020-07-11T15:39:31.780Z</updated>
+    <updated>2020-07-11T15:46:24.550Z</updated>
     
     <summary type="html">
     
@@ -36,12 +36,14 @@
     </summary>
     
     
-      <category term="技术" scheme="http://chanson_pro.gitee.io/categories/%E6%8A%80%E6%9C%AF/"/>
+      <category term="博客" scheme="http://chanson_pro.gitee.io/categories/%E5%8D%9A%E5%AE%A2/"/>
     
-      <category term="java" scheme="http://chanson_pro.gitee.io/categories/%E6%8A%80%E6%9C%AF/java/"/>
+      <category term="hexo" scheme="http://chanson_pro.gitee.io/categories/%E5%8D%9A%E5%AE%A2/hexo/"/>
     
     
-      <category term="java" scheme="http://chanson_pro.gitee.io/tags/java/"/>
+      <category term="hexo" scheme="http://chanson_pro.gitee.io/tags/hexo/"/>
+    
+      <category term="gitee" scheme="http://chanson_pro.gitee.io/tags/gitee/"/>
     
   </entry>
   
