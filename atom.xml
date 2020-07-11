@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://chansonpro.github.io/"/>
-  <updated>2020-07-11T08:30:43.416Z</updated>
+  <updated>2020-07-11T08:39:30.926Z</updated>
   <id>https://chansonpro.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>init</title>
+    <link href="https://chansonpro.github.io/init/"/>
+    <id>https://chansonpro.github.io/init/</id>
+    <published>2020-07-11T08:33:58.000Z</published>
+    <updated>2020-07-11T08:39:30.926Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;我是短小精悍的文章摘要(๑•̀ㅂ•́)و✧摘要沙哈哈哈&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="https://chansonpro.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+      <category term="java" scheme="https://chansonpro.github.io/categories/%E6%8A%80%E6%9C%AF/java/"/>
+    
+    
+      <category term="java" scheme="https://chansonpro.github.io/tags/java/"/>
+    
+  </entry>
   
   <entry>
     <title>轻轻的我来了</title>
