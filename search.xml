@@ -4,6 +4,37 @@
   
     
     <entry>
+      <title>second</title>
+      <link href="/second/"/>
+      <url>/second/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术 </category>
+          
+          <category> java </category>
+          
+          <category> python </category>
+          
+          <category> 金融 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> java </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>init</title>
       <link href="/first-demo/"/>
       <url>/first-demo/</url>

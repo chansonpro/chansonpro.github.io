@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://chansonpro.github.io/"/>
-  <updated>2020-07-11T08:46:58.147Z</updated>
+  <updated>2020-07-11T09:09:34.466Z</updated>
   <id>https://chansonpro.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>second</title>
+    <link href="https://chansonpro.github.io/second/"/>
+    <id>https://chansonpro.github.io/second/</id>
+    <published>2020-07-11T09:09:34.000Z</published>
+    <updated>2020-07-11T09:09:34.466Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="https://chansonpro.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+      <category term="java" scheme="https://chansonpro.github.io/categories/%E6%8A%80%E6%9C%AF/java/"/>
+    
+      <category term="python" scheme="https://chansonpro.github.io/categories/%E6%8A%80%E6%9C%AF/python/"/>
+    
+      <category term="金融" scheme="https://chansonpro.github.io/categories/%E9%87%91%E8%9E%8D/"/>
+    
+    
+      <category term="java" scheme="https://chansonpro.github.io/tags/java/"/>
+    
+  </entry>
   
   <entry>
     <title>init</title>
