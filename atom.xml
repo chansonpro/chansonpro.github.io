@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://chanson_pro.gitee.io/"/>
-  <updated>2020-07-11T08:47:53.550Z</updated>
+  <updated>2020-07-11T15:39:31.780Z</updated>
   <id>http://chanson_pro.gitee.io/</id>
   
   <author>
@@ -20,8 +20,8 @@
     <title>Hello World</title>
     <link href="http://chanson_pro.gitee.io/hello-world/"/>
     <id>http://chanson_pro.gitee.io/hello-world/</id>
-    <published>2020-07-10T15:49:44.253Z</published>
-    <updated>2020-07-11T08:47:53.550Z</updated>
+    <published>2020-07-11T15:39:08.000Z</published>
+    <updated>2020-07-11T15:39:31.780Z</updated>
     
     <summary type="html">
     
@@ -36,6 +36,12 @@
     </summary>
     
     
+      <category term="技术" scheme="http://chanson_pro.gitee.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+      <category term="java" scheme="http://chanson_pro.gitee.io/categories/%E6%8A%80%E6%9C%AF/java/"/>
+    
+    
+      <category term="java" scheme="http://chanson_pro.gitee.io/tags/java/"/>
     
   </entry>
   
