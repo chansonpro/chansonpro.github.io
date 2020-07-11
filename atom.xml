@@ -3,11 +3,11 @@
   <title>松弦止风</title>
   
   <subtitle>coder</subtitle>
-  <link href="/atom.xml" rel="self"/>
+  <link href="/blog/atom.xml" rel="self"/>
   
-  <link href="http://chanson_pro.gitee.io/blog/"/>
+  <link href="https://chanson_pro.gitee.io/blog.git/"/>
   <updated>2020-07-11T09:09:34.466Z</updated>
-  <id>http://chanson_pro.gitee.io/blog/</id>
+  <id>https://chanson_pro.gitee.io/blog.git/</id>
   
   <author>
     <name>chansonpro</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>second</title>
-    <link href="http://chanson_pro.gitee.io/blog/second/"/>
-    <id>http://chanson_pro.gitee.io/blog/second/</id>
+    <link href="https://chanson_pro.gitee.io/blog.git/second/"/>
+    <id>https://chanson_pro.gitee.io/blog.git/second/</id>
     <published>2020-07-11T09:09:34.000Z</published>
     <updated>2020-07-11T09:09:34.466Z</updated>
     
@@ -28,23 +28,23 @@
     </summary>
     
     
-      <category term="技术" scheme="http://chanson_pro.gitee.io/blog/categories/%E6%8A%80%E6%9C%AF/"/>
+      <category term="技术" scheme="https://chanson_pro.gitee.io/blog.git/categories/%E6%8A%80%E6%9C%AF/"/>
     
-      <category term="java" scheme="http://chanson_pro.gitee.io/blog/categories/%E6%8A%80%E6%9C%AF/java/"/>
+      <category term="java" scheme="https://chanson_pro.gitee.io/blog.git/categories/%E6%8A%80%E6%9C%AF/java/"/>
     
-      <category term="python" scheme="http://chanson_pro.gitee.io/blog/categories/%E6%8A%80%E6%9C%AF/python/"/>
+      <category term="python" scheme="https://chanson_pro.gitee.io/blog.git/categories/%E6%8A%80%E6%9C%AF/python/"/>
     
-      <category term="金融" scheme="http://chanson_pro.gitee.io/blog/categories/%E9%87%91%E8%9E%8D/"/>
+      <category term="金融" scheme="https://chanson_pro.gitee.io/blog.git/categories/%E9%87%91%E8%9E%8D/"/>
     
     
-      <category term="java" scheme="http://chanson_pro.gitee.io/blog/tags/java/"/>
+      <category term="java" scheme="https://chanson_pro.gitee.io/blog.git/tags/java/"/>
     
   </entry>
   
   <entry>
     <title>init</title>
-    <link href="http://chanson_pro.gitee.io/blog/first-demo/"/>
-    <id>http://chanson_pro.gitee.io/blog/first-demo/</id>
+    <link href="https://chanson_pro.gitee.io/blog.git/first-demo/"/>
+    <id>https://chanson_pro.gitee.io/blog.git/first-demo/</id>
     <published>2020-07-11T08:33:58.000Z</published>
     <updated>2020-07-11T08:46:58.147Z</updated>
     
@@ -55,19 +55,19 @@
     </summary>
     
     
-      <category term="技术" scheme="http://chanson_pro.gitee.io/blog/categories/%E6%8A%80%E6%9C%AF/"/>
+      <category term="技术" scheme="https://chanson_pro.gitee.io/blog.git/categories/%E6%8A%80%E6%9C%AF/"/>
     
-      <category term="java" scheme="http://chanson_pro.gitee.io/blog/categories/%E6%8A%80%E6%9C%AF/java/"/>
+      <category term="java" scheme="https://chanson_pro.gitee.io/blog.git/categories/%E6%8A%80%E6%9C%AF/java/"/>
     
     
-      <category term="java" scheme="http://chanson_pro.gitee.io/blog/tags/java/"/>
+      <category term="java" scheme="https://chanson_pro.gitee.io/blog.git/tags/java/"/>
     
   </entry>
   
   <entry>
     <title>轻轻的我来了</title>
-    <link href="http://chanson_pro.gitee.io/blog/qing-qing-de-wo-lai-liao/"/>
-    <id>http://chanson_pro.gitee.io/blog/qing-qing-de-wo-lai-liao/</id>
+    <link href="https://chanson_pro.gitee.io/blog.git/qing-qing-de-wo-lai-liao/"/>
+    <id>https://chanson_pro.gitee.io/blog.git/qing-qing-de-wo-lai-liao/</id>
     <published>2020-07-10T16:31:20.000Z</published>
     <updated>2020-07-11T08:30:43.416Z</updated>
     
@@ -78,23 +78,23 @@
     </summary>
     
     
-      <category term="技术" scheme="http://chanson_pro.gitee.io/blog/categories/%E6%8A%80%E6%9C%AF/"/>
+      <category term="技术" scheme="https://chanson_pro.gitee.io/blog.git/categories/%E6%8A%80%E6%9C%AF/"/>
     
-      <category term="java" scheme="http://chanson_pro.gitee.io/blog/categories/%E6%8A%80%E6%9C%AF/java/"/>
+      <category term="java" scheme="https://chanson_pro.gitee.io/blog.git/categories/%E6%8A%80%E6%9C%AF/java/"/>
     
-      <category term="python" scheme="http://chanson_pro.gitee.io/blog/categories/%E6%8A%80%E6%9C%AF/python/"/>
+      <category term="python" scheme="https://chanson_pro.gitee.io/blog.git/categories/%E6%8A%80%E6%9C%AF/python/"/>
     
-      <category term="金融" scheme="http://chanson_pro.gitee.io/blog/categories/%E9%87%91%E8%9E%8D/"/>
+      <category term="金融" scheme="https://chanson_pro.gitee.io/blog.git/categories/%E9%87%91%E8%9E%8D/"/>
     
     
-      <category term="java" scheme="http://chanson_pro.gitee.io/blog/tags/java/"/>
+      <category term="java" scheme="https://chanson_pro.gitee.io/blog.git/tags/java/"/>
     
   </entry>
   
   <entry>
     <title>init</title>
-    <link href="http://chanson_pro.gitee.io/blog/init/"/>
-    <id>http://chanson_pro.gitee.io/blog/init/</id>
+    <link href="https://chanson_pro.gitee.io/blog.git/init/"/>
+    <id>https://chanson_pro.gitee.io/blog.git/init/</id>
     <published>2020-07-10T16:00:00.000Z</published>
     <updated>2020-07-11T08:46:33.616Z</updated>
     
@@ -108,8 +108,8 @@
   
   <entry>
     <title>spring</title>
-    <link href="http://chanson_pro.gitee.io/blog/spring/"/>
-    <id>http://chanson_pro.gitee.io/blog/spring/</id>
+    <link href="https://chanson_pro.gitee.io/blog.git/spring/"/>
+    <id>https://chanson_pro.gitee.io/blog.git/spring/</id>
     <published>2020-07-10T15:49:44.254Z</published>
     <updated>2020-07-10T15:49:44.255Z</updated>
     
@@ -131,8 +131,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://chanson_pro.gitee.io/blog/hello-world/"/>
-    <id>http://chanson_pro.gitee.io/blog/hello-world/</id>
+    <link href="https://chanson_pro.gitee.io/blog.git/hello-world/"/>
+    <id>https://chanson_pro.gitee.io/blog.git/hello-world/</id>
     <published>2020-07-10T15:49:44.253Z</published>
     <updated>2020-07-11T08:47:53.550Z</updated>
     
