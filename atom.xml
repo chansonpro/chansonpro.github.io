@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://chanson_pro.gitee.io/"/>
-  <updated>2020-07-11T15:46:24.550Z</updated>
+  <updated>2020-07-13T09:08:57.543Z</updated>
   <id>http://chanson_pro.gitee.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>hexo部署gitee</title>
+    <link href="http://chanson_pro.gitee.io/hexo-bu-shu-gitee/"/>
+    <id>http://chanson_pro.gitee.io/hexo-bu-shu-gitee/</id>
+    <published>2020-07-13T09:03:31.000Z</published>
+    <updated>2020-07-13T09:08:57.543Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;hexo部署在gitee采坑记录……&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="博客" scheme="http://chanson_pro.gitee.io/categories/%E5%8D%9A%E5%AE%A2/"/>
+    
+      <category term="hexo" scheme="http://chanson_pro.gitee.io/categories/%E5%8D%9A%E5%AE%A2/hexo/"/>
+    
+      <category term="gitee" scheme="http://chanson_pro.gitee.io/categories/gitee/"/>
+    
+      <category term="github" scheme="http://chanson_pro.gitee.io/categories/github/"/>
+    
+    
+      <category term="博客" scheme="http://chanson_pro.gitee.io/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>
