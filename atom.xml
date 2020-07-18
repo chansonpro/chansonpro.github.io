@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://chanson_pro.gitee.io/"/>
-  <updated>2020-07-13T09:19:42.191Z</updated>
+  <updated>2020-07-18T18:21:16.910Z</updated>
   <id>http://chanson_pro.gitee.io/</id>
   
   <author>
@@ -15,6 +15,285 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>java学习路线11</title>
+    <link href="http://chanson_pro.gitee.io/java-xue-xi-lu-xian-11/"/>
+    <id>http://chanson_pro.gitee.io/java-xue-xi-lu-xian-11/</id>
+    <published>2020-07-18T18:16:10.000Z</published>
+    <updated>2020-07-18T18:21:16.910Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;java学习路线之&lt;strong&gt;虚拟化/容器化&lt;/strong&gt;，核心知识点……&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="http://chanson_pro.gitee.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+      <category term="java" scheme="http://chanson_pro.gitee.io/categories/%E6%8A%80%E6%9C%AF/java/"/>
+    
+    
+      <category term="java基础" scheme="http://chanson_pro.gitee.io/tags/java%E5%9F%BA%E7%A1%80/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>java学习路线10</title>
+    <link href="http://chanson_pro.gitee.io/java-xue-xi-lu-xian-10/"/>
+    <id>http://chanson_pro.gitee.io/java-xue-xi-lu-xian-10/</id>
+    <published>2020-07-18T18:16:06.000Z</published>
+    <updated>2020-07-18T18:20:40.706Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;java学习路线之&lt;strong&gt;分布式/微服务&lt;/strong&gt;，核心知识点……&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="http://chanson_pro.gitee.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+      <category term="java" scheme="http://chanson_pro.gitee.io/categories/%E6%8A%80%E6%9C%AF/java/"/>
+    
+    
+      <category term="java基础" scheme="http://chanson_pro.gitee.io/tags/java%E5%9F%BA%E7%A1%80/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>java学习路线9</title>
+    <link href="http://chanson_pro.gitee.io/java-xue-xi-lu-xian-9/"/>
+    <id>http://chanson_pro.gitee.io/java-xue-xi-lu-xian-9/</id>
+    <published>2020-07-18T18:16:02.000Z</published>
+    <updated>2020-07-18T18:19:42.524Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;java学习路线之&lt;strong&gt;搜索引擎&lt;/strong&gt;，核心知识点……&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="http://chanson_pro.gitee.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+      <category term="java" scheme="http://chanson_pro.gitee.io/categories/%E6%8A%80%E6%9C%AF/java/"/>
+    
+    
+      <category term="java基础" scheme="http://chanson_pro.gitee.io/tags/java%E5%9F%BA%E7%A1%80/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>java学习路线8</title>
+    <link href="http://chanson_pro.gitee.io/java-xue-xi-lu-xian-8/"/>
+    <id>http://chanson_pro.gitee.io/java-xue-xi-lu-xian-8/</id>
+    <published>2020-07-18T17:49:50.000Z</published>
+    <updated>2020-07-18T18:18:10.258Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;java学习路线之&lt;strong&gt;数据库&lt;/strong&gt;，核心知识点……&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="http://chanson_pro.gitee.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+      <category term="java" scheme="http://chanson_pro.gitee.io/categories/%E6%8A%80%E6%9C%AF/java/"/>
+    
+    
+      <category term="应用框架" scheme="http://chanson_pro.gitee.io/tags/%E5%BA%94%E7%94%A8%E6%A1%86%E6%9E%B6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>java学习路线7</title>
+    <link href="http://chanson_pro.gitee.io/java-xue-xi-lu-xian-7/"/>
+    <id>http://chanson_pro.gitee.io/java-xue-xi-lu-xian-7/</id>
+    <published>2020-07-18T17:49:45.000Z</published>
+    <updated>2020-07-18T18:13:12.563Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;java学习路线之&lt;strong&gt;中间件&lt;/strong&gt;，核心知识点……&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="http://chanson_pro.gitee.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+      <category term="java" scheme="http://chanson_pro.gitee.io/categories/%E6%8A%80%E6%9C%AF/java/"/>
+    
+    
+      <category term="应用框架" scheme="http://chanson_pro.gitee.io/tags/%E5%BA%94%E7%94%A8%E6%A1%86%E6%9E%B6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>java学习路线6</title>
+    <link href="http://chanson_pro.gitee.io/java-xue-xi-lu-xian-6/"/>
+    <id>http://chanson_pro.gitee.io/java-xue-xi-lu-xian-6/</id>
+    <published>2020-07-18T17:49:40.000Z</published>
+    <updated>2020-07-18T18:06:33.789Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;java学习路线之&lt;strong&gt;spring家族&lt;/strong&gt;，核心知识点……&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="http://chanson_pro.gitee.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+      <category term="java" scheme="http://chanson_pro.gitee.io/categories/%E6%8A%80%E6%9C%AF/java/"/>
+    
+    
+      <category term="应用框架" scheme="http://chanson_pro.gitee.io/tags/%E5%BA%94%E7%94%A8%E6%A1%86%E6%9E%B6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>java学习路线5</title>
+    <link href="http://chanson_pro.gitee.io/java-xue-xi-lu-xian-5/"/>
+    <id>http://chanson_pro.gitee.io/java-xue-xi-lu-xian-5/</id>
+    <published>2020-07-18T17:45:27.000Z</published>
+    <updated>2020-07-18T17:51:20.545Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;java学习路线之&lt;strong&gt;设计模式&lt;/strong&gt;，核心知识点……&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="http://chanson_pro.gitee.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+      <category term="java" scheme="http://chanson_pro.gitee.io/categories/%E6%8A%80%E6%9C%AF/java/"/>
+    
+    
+      <category term="java基础" scheme="http://chanson_pro.gitee.io/tags/java%E5%9F%BA%E7%A1%80/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>java学习路线1</title>
+    <link href="http://chanson_pro.gitee.io/java-xue-xi-lu-xian-1/"/>
+    <id>http://chanson_pro.gitee.io/java-xue-xi-lu-xian-1/</id>
+    <published>2020-07-18T17:15:25.000Z</published>
+    <updated>2020-07-18T17:43:24.057Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;java学习路线之&lt;strong&gt;java语言&lt;/strong&gt;，核心知识点……&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="http://chanson_pro.gitee.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+      <category term="java" scheme="http://chanson_pro.gitee.io/categories/%E6%8A%80%E6%9C%AF/java/"/>
+    
+    
+      <category term="java基础" scheme="http://chanson_pro.gitee.io/tags/java%E5%9F%BA%E7%A1%80/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>java学习路线5</title>
+    <link href="http://chanson_pro.gitee.io/java-xue-xi-lu-xian-4/"/>
+    <id>http://chanson_pro.gitee.io/java-xue-xi-lu-xian-4/</id>
+    <published>2020-07-18T17:15:25.000Z</published>
+    <updated>2020-07-18T17:47:23.896Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;java学习路线之&lt;strong&gt;数据库&lt;/strong&gt;，核心知识点……&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="http://chanson_pro.gitee.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+      <category term="java" scheme="http://chanson_pro.gitee.io/categories/%E6%8A%80%E6%9C%AF/java/"/>
+    
+    
+      <category term="java基础" scheme="http://chanson_pro.gitee.io/tags/java%E5%9F%BA%E7%A1%80/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>java学习路线2</title>
+    <link href="http://chanson_pro.gitee.io/java-xue-xi-lu-xian-3/"/>
+    <id>http://chanson_pro.gitee.io/java-xue-xi-lu-xian-3/</id>
+    <published>2020-07-18T17:15:25.000Z</published>
+    <updated>2020-07-18T17:45:18.242Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;java学习路线之&lt;strong&gt;计算机网络&lt;/strong&gt;，核心知识点……&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="http://chanson_pro.gitee.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+      <category term="java" scheme="http://chanson_pro.gitee.io/categories/%E6%8A%80%E6%9C%AF/java/"/>
+    
+    
+      <category term="java基础" scheme="http://chanson_pro.gitee.io/tags/java%E5%9F%BA%E7%A1%80/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>java学习路线2</title>
+    <link href="http://chanson_pro.gitee.io/java-xue-xi-lu-xian-2/"/>
+    <id>http://chanson_pro.gitee.io/java-xue-xi-lu-xian-2/</id>
+    <published>2020-07-18T17:15:25.000Z</published>
+    <updated>2020-07-18T17:43:26.388Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;java学习路线之&lt;strong&gt;数据结构与算法&lt;/strong&gt;，核心知识点……&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="http://chanson_pro.gitee.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+      <category term="java" scheme="http://chanson_pro.gitee.io/categories/%E6%8A%80%E6%9C%AF/java/"/>
+    
+    
+      <category term="java基础" scheme="http://chanson_pro.gitee.io/tags/java%E5%9F%BA%E7%A1%80/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>序列化与反序列化</title>
+    <link href="http://chanson_pro.gitee.io/xu-lie-hua-yu-fan-xu-lie-hua/"/>
+    <id>http://chanson_pro.gitee.io/xu-lie-hua-yu-fan-xu-lie-hua/</id>
+    <published>2020-07-16T12:25:45.000Z</published>
+    <updated>2020-07-16T13:08:19.107Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;1.为什么需要序列化？&lt;/p&gt;
+&lt;p&gt;2.如何进行序列化？&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="http://chanson_pro.gitee.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+      <category term="网络通信" scheme="http://chanson_pro.gitee.io/categories/%E6%8A%80%E6%9C%AF/%E7%BD%91%E7%BB%9C%E9%80%9A%E4%BF%A1/"/>
+    
+    
+      <category term="网络通信" scheme="http://chanson_pro.gitee.io/tags/%E7%BD%91%E7%BB%9C%E9%80%9A%E4%BF%A1/"/>
+    
+      <category term="RPC" scheme="http://chanson_pro.gitee.io/tags/RPC/"/>
+    
+  </entry>
   
   <entry>
     <title>hexo部署gitee</title>
