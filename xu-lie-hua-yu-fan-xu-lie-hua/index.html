@@ -12,9 +12,8 @@
 2.如何进行序列化？
 
 
-1.why序列化，将对象转成字节流（反序列化相反），可用于数据远程传输、存储，通过序列化可以解决数据一致性问题。
-在数据传输过程中，如果不进行序列化，无法解决跨平台问题，安全性也无法保证。
-">
+1.why序列化，把变量从内存中变成可存储或传输的过程称之为序列化，把变量内容从序列化的对象重新读到内存里称之为反序列化。
+通过序列化可以解决数据一致性问题，在数据传输过程中，如果不进行序列">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -336,7 +335,7 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/6.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -499,14 +498,14 @@
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    110
+                    519
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    2 分
                 </div>
                 
                 
@@ -526,9 +525,52 @@
 <p>2.如何进行序列化？</p>
 <a id="more"></a>
 
-<h1 id="1-why"><a href="#1-why" class="headerlink" title="1.why"></a>1.why</h1><p>序列化，将对象转成字节流（反序列化相反），可用于数据远程传输、存储，通过序列化可以解决数据一致性问题。</p>
-<p>在数据传输过程中，如果不进行序列化，无法解决跨平台问题，安全性也无法保证。</p>
-<h1 id="2-How"><a href="#2-How" class="headerlink" title="2.How"></a>2.How</h1><h2 id="2-1-java原生"><a href="#2-1-java原生" class="headerlink" title="2.1 java原生"></a>2.1 java原生</h2><h2 id="2-2-json"><a href="#2-2-json" class="headerlink" title="2.2 json"></a>2.2 json</h2><h2 id="2-3-fastjson"><a href="#2-3-fastjson" class="headerlink" title="2.3 fastjson"></a>2.3 fastjson</h2><h2 id="2-4-protobuf"><a href="#2-4-protobuf" class="headerlink" title="2.4 protobuf"></a>2.4 protobuf</h2><h2 id="2-5-hession"><a href="#2-5-hession" class="headerlink" title="2.5 hession"></a>2.5 hession</h2>
+<h1 id="1-why"><a href="#1-why" class="headerlink" title="1.why"></a>1.why</h1><p>序列化，把变量从内存中变成可存储或传输的过程称之为序列化，把变量内容从序列化的对象重新读到内存里称之为反序列化。</p>
+<p>通过序列化可以解决数据一致性问题，在数据传输过程中，如果不进行序列化，无法解决跨平台问题，安全性也无法保证。</p>
+<h1 id="2-How"><a href="#2-How" class="headerlink" title="2.How"></a>2.How</h1><p>目前常见的序列化的方式有java原生、JSON、XML、Hessian、Thrift、Protobuff等。</p>
+<h2 id="2-1-java原生"><a href="#2-1-java原生" class="headerlink" title="2.1 java原生"></a>2.1 java原生</h2><p>jdk自带，需实现Serializable接口，该接口里面没有任何方法、字段。只是一种语义标识。</p>
+<p><strong>实现了Serializable接口的类可以被ObjectOutputStream转换为字节流，同时也可以通过ObjectInputStream再将其解析为对象，没有实现Serializable接口的对象是无法通过IO操作持久化的。</strong></p>
+<p>对于JVM来说，要进行持久化的类必须要有一个标记，只有持有这个标记JVM才允许类创建的对象可以通过其IO系统转换为字节数据，从而实现持久化，而这个标记就是Serializable接口。而在反序列化的过程中则需要使用serialVersionUID来确定由那个类来加载这个对象，所以我们在实现Serializable接口的时候，一般还会要去尽量显示地定义serialVersionUID。</p>
+<pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">ComputerCal</span> <span class="token keyword">implements</span> <span class="token class-name">Serializable</span> <span class="token punctuation">{</span>
+
+    <span class="token keyword">private</span> <span class="token keyword">static</span> <span class="token keyword">final</span> <span class="token keyword">long</span> serialVersionUID <span class="token operator">=</span> <span class="token operator">-</span>5839027609526095548L<span class="token punctuation">;</span>
+    <span class="token keyword">private</span> String name<span class="token punctuation">;</span>
+    <span class="token keyword">private</span> String type<span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token function">ComputerCal</span><span class="token punctuation">(</span>String name<span class="token punctuation">,</span> String type<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>name <span class="token operator">=</span> name<span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>type <span class="token operator">=</span> type<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token comment" spellcheck="true">// get set 略</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>write to file</p>
+<pre><code>@Test
+    public void testWriteToFile() {
+        // 序列化之后写出到文件中
+        ComputerCal cal = new ComputerCal(&quot;苹果&quot;, &quot;mac-pro&quot;);
+        FileOutputStream fileOutputStream = null;
+        try {
+            fileOutputStream = new FileOutputStream(&quot;Users/demo.txt&quot;);
+            ObjectOutputStream output = new ObjectOutputStream(fileOutputStream);
+            output.writeObject(cal);
+            output.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }  
+    }</code></pre><p>文件中保存为二进制文件。</p>
+<p>read from file</p>
+<pre><code>@Test
+    public void testReadFromFile(){
+        try {
+            FileInputStream stream = new FileInputStream(&quot;/Users/demo.txt&quot;);
+            ObjectInputStream inputStream = new ObjectInputStream(stream);
+            Object object = inputStream.readObject();
+            ComputerCal cal = (ComputerCal) object;
+            System.out.println(cal);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }</code></pre><p>反序列化之后的对象如下：java8.serializable.ComputerCal@129a8472</p>
+<h2 id="2-2-json"><a href="#2-2-json" class="headerlink" title="2.2 json"></a>2.2 json</h2><h2 id="2-3-protobuf"><a href="#2-3-protobuf" class="headerlink" title="2.3 protobuf"></a>2.3 protobuf</h2><h2 id="2-4-hession"><a href="#2-4-hession" class="headerlink" title="2.4 hession"></a>2.4 hession</h2>
             </div>
             <hr />
 
@@ -998,7 +1040,7 @@
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="java学习路线1">
+                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="java学习路线1">
                         
                         <span class="card-title">java学习路线1</span>
                     </div>
@@ -1055,7 +1097,7 @@
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="hexo部署gitee">
+                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="hexo部署gitee">
                         
                         <span class="card-title">hexo部署gitee</span>
                     </div>
@@ -1258,7 +1300,7 @@
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">1k</span>
+            <span class="white-color">1.4k</span>
             
 
             <br>
