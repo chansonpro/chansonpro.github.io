@@ -498,14 +498,14 @@
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    519
+                    952
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    2 分
+                    3 分
                 </div>
                 
                 
@@ -529,7 +529,7 @@
 <p>通过序列化可以解决数据一致性问题，在数据传输过程中，如果不进行序列化，无法解决跨平台问题，安全性也无法保证。</p>
 <h1 id="2-How"><a href="#2-How" class="headerlink" title="2.How"></a>2.How</h1><p>目前常见的序列化的方式有java原生、JSON、XML、Hessian、Thrift、Protobuff等。</p>
 <h2 id="2-1-java原生"><a href="#2-1-java原生" class="headerlink" title="2.1 java原生"></a>2.1 java原生</h2><p>jdk自带，需实现Serializable接口，该接口里面没有任何方法、字段。只是一种语义标识。</p>
-<p><strong>实现了Serializable接口的类可以被ObjectOutputStream转换为字节流，同时也可以通过ObjectInputStream再将其解析为对象，没有实现Serializable接口的对象是无法通过IO操作持久化的。</strong></p>
+<p><strong>实现了Serializable接口的类可以被ObjectOutputStream转换为字节流(仅对对象的</strong>非transient的实例变量<strong>进行序列化)，同时也可以通过ObjectInputStream再将其解析为对象，没有实现Serializable接口的对象是无法通过IO操作持久化的。</strong></p>
 <p>对于JVM来说，要进行持久化的类必须要有一个标记，只有持有这个标记JVM才允许类创建的对象可以通过其IO系统转换为字节数据，从而实现持久化，而这个标记就是Serializable接口。而在反序列化的过程中则需要使用serialVersionUID来确定由那个类来加载这个对象，所以我们在实现Serializable接口的时候，一般还会要去尽量显示地定义serialVersionUID。</p>
 <pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">ComputerCal</span> <span class="token keyword">implements</span> <span class="token class-name">Serializable</span> <span class="token punctuation">{</span>
 
@@ -543,34 +543,55 @@
     <span class="token comment" spellcheck="true">// get set 略</span>
 <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>write to file</p>
-<pre><code>@Test
-    public void testWriteToFile() {
-        // 序列化之后写出到文件中
-        ComputerCal cal = new ComputerCal(&quot;苹果&quot;, &quot;mac-pro&quot;);
-        FileOutputStream fileOutputStream = null;
-        try {
-            fileOutputStream = new FileOutputStream(&quot;Users/demo.txt&quot;);
-            ObjectOutputStream output = new ObjectOutputStream(fileOutputStream);
-            output.writeObject(cal);
-            output.close();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }  
-    }</code></pre><p>文件中保存为二进制文件。</p>
+<pre class="line-numbers language-java"><code class="language-java"><span class="token annotation punctuation">@Test</span>
+<span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">testWriteToFile</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment" spellcheck="true">// 序列化之后写出到文件中</span>
+    ComputerCal cal <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ComputerCal</span><span class="token punctuation">(</span><span class="token string">"苹果"</span><span class="token punctuation">,</span> <span class="token string">"mac-pro"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    FileOutputStream fileOutputStream <span class="token operator">=</span> null<span class="token punctuation">;</span>
+    <span class="token keyword">try</span> <span class="token punctuation">{</span>
+        fileOutputStream <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">FileOutputStream</span><span class="token punctuation">(</span><span class="token string">"Users/demo.txt"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        ObjectOutputStream output <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ObjectOutputStream</span><span class="token punctuation">(</span>fileOutputStream<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        output<span class="token punctuation">.</span><span class="token function">writeObject</span><span class="token punctuation">(</span>cal<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        output<span class="token punctuation">.</span><span class="token function">close</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">Exception</span> e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        e<span class="token punctuation">.</span><span class="token function">printStackTrace</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>  
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>文件中保存为二进制文件。</p>
 <p>read from file</p>
-<pre><code>@Test
-    public void testReadFromFile(){
-        try {
-            FileInputStream stream = new FileInputStream(&quot;/Users/demo.txt&quot;);
-            ObjectInputStream inputStream = new ObjectInputStream(stream);
-            Object object = inputStream.readObject();
-            ComputerCal cal = (ComputerCal) object;
-            System.out.println(cal);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }</code></pre><p>反序列化之后的对象如下：java8.serializable.ComputerCal@129a8472</p>
-<h2 id="2-2-json"><a href="#2-2-json" class="headerlink" title="2.2 json"></a>2.2 json</h2><h2 id="2-3-protobuf"><a href="#2-3-protobuf" class="headerlink" title="2.3 protobuf"></a>2.3 protobuf</h2><h2 id="2-4-hession"><a href="#2-4-hession" class="headerlink" title="2.4 hession"></a>2.4 hession</h2>
+<pre class="line-numbers language-java"><code class="language-java"><span class="token annotation punctuation">@Test</span>
+<span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">testReadFromFile</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">try</span> <span class="token punctuation">{</span>
+        FileInputStream stream <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">FileInputStream</span><span class="token punctuation">(</span><span class="token string">"/Users/demo.txt"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        ObjectInputStream inputStream <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ObjectInputStream</span><span class="token punctuation">(</span>stream<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        Object object <span class="token operator">=</span> inputStream<span class="token punctuation">.</span><span class="token function">readObject</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        ComputerCal cal <span class="token operator">=</span> <span class="token punctuation">(</span>ComputerCal<span class="token punctuation">)</span> object<span class="token punctuation">;</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>cal<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">Exception</span> e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        e<span class="token punctuation">.</span><span class="token function">printStackTrace</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>反序列化之后的对象如下：java8.serializable.ComputerCal@129a8472</p>
+<h2 id="2-2-json"><a href="#2-2-json" class="headerlink" title="2.2 json"></a>2.2 json</h2><p>JSON序列化框架有很多，主流的有下面三种：Gson、fastJson和Jackson。</p>
+<p>阿里巴巴fastjson序列化</p>
+<pre class="line-numbers language-java"><code class="language-java"><span class="token annotation punctuation">@Test</span>
+<span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">testFastJson</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  ComputerCal cal <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ComputerCal</span><span class="token punctuation">(</span><span class="token string">"苹果"</span><span class="token punctuation">,</span> null<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  String s <span class="token operator">=</span> JSONObject<span class="token punctuation">.</span><span class="token function">toJSONString</span><span class="token punctuation">(</span>cal<span class="token punctuation">,</span> SerializerFeature<span class="token punctuation">.</span>WRITE_MAP_NULL_FEATURES<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>s<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>GSON格式美化</p>
+<pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">public</span> String <span class="token function">converJsonToPretty</span><span class="token punctuation">(</span>String uglyJsonStr<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    Gson gson <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">GsonBuilder</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">setPrettyPrinting</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">create</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    JsonParser jp <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">JsonParser</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    JsonElement je <span class="token operator">=</span> jp<span class="token punctuation">.</span><span class="token function">parse</span><span class="token punctuation">(</span>uglyJsonStr<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> gson<span class="token punctuation">.</span><span class="token function">toJson</span><span class="token punctuation">(</span>je<span class="token punctuation">)</span><span class="token punctuation">;</span>
+ <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="2-3-protobuf"><a href="#2-3-protobuf" class="headerlink" title="2.3 protobuf"></a>2.3 protobuf</h2><p>protobuf（Protocol Buffers，官网传送门）是由Google公司发布的数据交换格式，提供跨语言、跨平台的序列化和反序列化实现，底层由C++实现，其他平台使用时必须使用protocol compiler进行预编译生成protoc二进制文件，原生的protobuf演示略显麻烦，这里只是为了做性能测试，因此使用百度公司对protobuf二次封装的API:jprotobuf（github传送门）</p>
+<p>jprotobuf是针对Java程序开发一套简易类库，目的是简化java语言对protobuf类库的使用，无需再去了解proto文件操作与语法，直接使用java注解定义字段类型即可。protobuf性能主要消耗在文件的预编译上，因此jprotobuf提供的maven预编译插件，在工程编译/打包时生成protobuf二进制文件。</p>
+<h2 id="2-4-hession"><a href="#2-4-hession" class="headerlink" title="2.4 hession"></a>2.4 hession</h2><p>Hessian是一个基于二进制的协议，Hessian支持很多种语言，例如Java、python、c++,、net/c#、D、Erlang、PHP、Ruby、object-c等，它的序列化和反序列化也是非常高效，与Java原生序列化一样，被序列化/反序列化的对象也必须实现Serializable接口，实现代码的写法也很像Java原生序列化，开源的Dubbo使用的hessian是升级优化之后版本。</p>
+<h1 id="3-END"><a href="#3-END" class="headerlink" title="3.END"></a>3.END</h1><p>! [hexo image] (/Users/chanson/IdeaProjects/daydayup_project/chansonblog/source/_posts/2020-07-16-序列化与反序列化/1.png)</p>
+
             </div>
             <hr />
 
@@ -1300,7 +1321,7 @@
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">1.4k</span>
+            <span class="white-color">1.9k</span>
             
 
             <br>
