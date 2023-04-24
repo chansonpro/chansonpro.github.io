@@ -16,23 +16,25 @@
   <meta name="author" content="chanson">
   <meta name="keywords" content="">
   
-    <meta name="description" content="文献集锦“Transformer”概念通俗易懂介绍https:&#x2F;&#x2F;jalammar.github.io&#x2F;illustrated-transformer&#x2F; CS324提供了关于大型语言模型建模、理论、伦理和系统方面的基础知识，并且提供了亲自体验构建大模型的机会。https:&#x2F;&#x2F;stanford-cs324.github.io&#x2F;winter2022&#x2F; 大模型家族详细介绍https:&#x2F;&#x2F;lilianwe">
+    <meta name="description" content="今年2月，中共中央、国务院印发的《数字中国建设整体布局规划》。数字化这件事有多重要，咱们不用多说了。过去几年，几乎所有的公司，都在研究数字化转型。毕竟，这是一个大趋势。而《数字中国建设整体布局规划》，命题更大、更深、更关键，它说的是，整个中国的数字化，也就是，数字中国的建设。 其实，关于这份文件的解读，已经有不少专家做过。这份文件的核心，在于一组数字，叫2522。第一个数字2，指的是做好两大基础，">
 <meta property="og:type" content="article">
-<meta property="og:title" content="未来已来">
-<meta property="og:url" content="http://chansonpro.com/2023/04/18/%E6%9C%AA%E6%9D%A5%E5%B7%B2%E6%9D%A5/index.html">
+<meta property="og:title" content="读懂“2522”，理解数字中国顶层设计">
+<meta property="og:url" content="http://chansonpro.com/2023/04/24/%E6%95%B0%E5%AD%97%E5%8C%96/index.html">
 <meta property="og:site_name" content="松弦止风">
-<meta property="og:description" content="文献集锦“Transformer”概念通俗易懂介绍https:&#x2F;&#x2F;jalammar.github.io&#x2F;illustrated-transformer&#x2F; CS324提供了关于大型语言模型建模、理论、伦理和系统方面的基础知识，并且提供了亲自体验构建大模型的机会。https:&#x2F;&#x2F;stanford-cs324.github.io&#x2F;winter2022&#x2F; 大模型家族详细介绍https:&#x2F;&#x2F;lilianwe">
+<meta property="og:description" content="今年2月，中共中央、国务院印发的《数字中国建设整体布局规划》。数字化这件事有多重要，咱们不用多说了。过去几年，几乎所有的公司，都在研究数字化转型。毕竟，这是一个大趋势。而《数字中国建设整体布局规划》，命题更大、更深、更关键，它说的是，整个中国的数字化，也就是，数字中国的建设。 其实，关于这份文件的解读，已经有不少专家做过。这份文件的核心，在于一组数字，叫2522。第一个数字2，指的是做好两大基础，">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-04-18T01:42:41.000Z">
-<meta property="article:modified_time" content="2023-04-18T01:43:50.679Z">
+<meta property="og:image" content="http://chansonpro.com/2023/04/24/%E6%95%B0%E5%AD%97%E5%8C%96/2522.png">
+<meta property="article:published_time" content="2023-04-24T11:10:04.000Z">
+<meta property="article:modified_time" content="2023-04-24T11:13:58.050Z">
 <meta property="article:author" content="chanson">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://chansonpro.com/2023/04/24/%E6%95%B0%E5%AD%97%E5%8C%96/2522.png">
   
   
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>未来已来 - 松弦止风</title>
+  <title>读懂“2522”，理解数字中国顶层设计 - 松弦止风</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -215,7 +217,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="未来已来"></span>
+            <span id="subtitle" data-typed-text="读懂“2522”，理解数字中国顶层设计"></span>
           
         </div>
 
@@ -226,8 +228,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-04-18 09:42" pubdate>
-          2023年4月18日 上午
+        <time datetime="2023-04-24 19:10" pubdate>
+          2023年4月24日 晚上
         </time>
       </span>
     
@@ -238,7 +240,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          254 字
+          2.6k 字
         
       </span>
     
@@ -249,7 +251,7 @@
         
         
         
-          3 分钟
+          23 分钟
         
       </span>
     
@@ -295,14 +297,34 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">未来已来</h1>
+            <h1 style="display: none">读懂“2522”，理解数字中国顶层设计</h1>
             
             
               <div class="markdown-body">
                 
-                <h1 id="文献集锦"><a href="#文献集锦" class="headerlink" title="文献集锦"></a>文献集锦</h1><h2 id="“Transformer”概念通俗易懂介绍"><a href="#“Transformer”概念通俗易懂介绍" class="headerlink" title="“Transformer”概念通俗易懂介绍"></a>“Transformer”概念通俗易懂介绍</h2><p><a target="_blank" rel="noopener" href="https://jalammar.github.io/illustrated-transformer/">https://jalammar.github.io/illustrated-transformer/</a></p>
-<h2 id="CS324提供了关于大型语言模型建模、理论、伦理和系统方面的基础知识，并且提供了亲自体验构建大模型的机会。"><a href="#CS324提供了关于大型语言模型建模、理论、伦理和系统方面的基础知识，并且提供了亲自体验构建大模型的机会。" class="headerlink" title="CS324提供了关于大型语言模型建模、理论、伦理和系统方面的基础知识，并且提供了亲自体验构建大模型的机会。"></a>CS324提供了关于大型语言模型建模、理论、伦理和系统方面的基础知识，并且提供了亲自体验构建大模型的机会。</h2><p><a target="_blank" rel="noopener" href="https://stanford-cs324.github.io/winter2022/">https://stanford-cs324.github.io/winter2022/</a></p>
-<h2 id="大模型家族详细介绍"><a href="#大模型家族详细介绍" class="headerlink" title="大模型家族详细介绍"></a>大模型家族详细介绍</h2><p><a target="_blank" rel="noopener" href="https://lilianweng.github.io/posts/2023-01-27-the-transformer-family-v2/">https://lilianweng.github.io/posts/2023-01-27-the-transformer-family-v2/</a></p>
+                <p>今年2月，中共中央、国务院印发的《数字中国建设整体布局规划》。数字化这件事有多重要，咱们不用多说了。过去几年，几乎所有的公司，都在研究数字化转型。毕竟，这是一个大趋势。<br>而《数字中国建设整体布局规划》，命题更大、更深、更关键，它说的是，整个中国的数字化，也就是，数字中国的建设。</p>
+<p>其实，关于这份文件的解读，已经有不少专家做过。这份文件的核心，在于一组数字，叫2522。<br>第一个数字2，指的是做好两大基础，分别是，数字基础设施和数据资源体系。<br>第二个数字5，说的是，推进数字技术与经济、政治、文化、社会、生态文明建设，五位一体的深度融合。<br>第三个数字2，说的是强化数字技术创新体系和数字安全屏障这两大能力。<br>第四个数字2，指的是，优化数字化发展国内和国际这两个环境。</p>
+<img src="/2023/04/24/%E6%95%B0%E5%AD%97%E5%8C%96/2522.png" srcset="/img/loading.gif" lazyload class="" title="图片引用方法一">
+<p>2522是方法，而我们的目标，是到2025年，基本形成横向打通、纵向贯通、协调有力的一体化推进格局。到2035年，数字化发展水平进入世界前列，数字中国建设取得重大成就。</p>
+<p>前面这些，每一个词，信息量都很大。为了让你更方便地记住，以及能更直接地解读出蕴藏在其中的机会，今天，我们换个讲法。我专门请教过中央党校，解读重大政策文件的专家。<br>人家告诉我，这类重大文件，假如想更深入地学习了解，不能只看文件本身，还得看前前后后，相关的重大政策。换句话说，我们可以从政策线索出发，来解读这份规划。</p>
+<p>带着这个视角，你会发现，在《数字中国建设整体布局规划》发布之前和之后，都有相关的大动作。咱们先说之前。这份规划是2023年2月发布的。<br>而早在2020年4月，国家发布的《关于构建更加完善的要素市场化配置体制机制的意见》，就已经明确提出了数字要素这个说法。</p>
+<p>要知道，在数字后面，加上要素两个字，意味着什么？这意味着，我们已经正式把数字看成一种生产要素了。在过去的经济学里，生产要素只有四种，分别是，土地、劳动力、资本和技术。<br>而现在，数据已经正式成为第五大生产要素。之后，数据要素又在很多重大会议中被重点提及。</p>
+<p>这是《数字中国建设整体布局规划》发布之前。我们再看之后，就在《规划》发布后不久，有一个重要机构宣布组建，这就是国家数据局。<br>就在今年3月，中共中央、国务院印发了《党和国家机构改革方案》，组建国家数据局。</p>
+<p>你看，从提出说法，到发布规划，再到组建直接的相关机构。这是一个清晰的线路，从构想到设计，从设计到行动。从中，我们能读出一个重点。就是我们在数据管理方面的重点，正在发生转变。<br>之前我国主要是对数据做监管。比如发布《个人信息保护法》和《数据安全法》，这些法案的重点，都在于不能做什么。而数字中国的顶层规划，以及国家数据局的组建，就是在表明，<br>我们数据管理的重点，正在从不能做什么，变成，应该做什么。</p>
+<p>简单说，数字化建设，政府扮演的角色，将从在后监管，变成带头统筹。在今年的两会精神中，也提到过，政府的职责之一，是帮助企业完成高端化、数字化、绿色化升级。<br>而国家数据局的组建，就是要更有效地推动这些事。</p>
+<p>因此，读懂数字中国顶层规划的关键之一，是要了解国家数据局。</p>
+<p>那么，国家数据局的职能定位是什么呢？前段时间，我看一个自媒体，叫人神共奋，勤奋的奋，专门研究过这个问题。</p>
+<p>首先，组建国家数据局，肯定是一个巨大的好消息。为什么？我们都知道，大数据，关键就在一个“大”字。数据需要联通，才能产生一加一大于二的效果。但是你知道，咱们中国最大的数据库在哪？<br>答案是，政府与相关国企。根据之前的统计，我国有80%的数据，都在政府与相关国企的服务器里。比如，城市人口的详细结构数据、商业设施的具体分布数据，等等。</p>
+<p>但问题是，这些数据虽然多，却掌握在不同的部门手里，非常分散。之前还有个说法，叫数据烟囱。指的是，每个政务部门，虽然有大量的数据，但是彼此之间不能共享。<br>就像一根根烟囱，只能在自己的管道里向上冒烟，不能横向打通。之前还有人研究过中国的政务信息化行业，发现中国的政务信息化市场，规模高达4000亿。但最大的IT公司营收，也只有十几亿。<br>你看，乙方小，说明什么？甲方太分散。</p>
+<p>而国家数据局的重要职责之一，就是拆掉数据烟囱。这么一来，首先受益的，就是老百姓。</p>
+<p>比如，曾经出过这么一件事。一个老人突然去世，留下的存款分布在几家银行，而且具体不知道是哪些。子女就只能把附近所有的银行，全跑一遍。但是，假如有数据互联，就能一键查询到所有存款。<br>再比如，去医院看病。现在很多医院与医院之间的数据没有打通，患者每换个医院，同样的手续就得再走一遍。假如数据打通，这些问题也能解决。</p>
+<p>在这里，要特别说一句。打通这些数据，工作量极大，需要非常深度的统筹协调。而这个工作，依靠任何民间的商业机构，都无法完成，必须由政府出面统筹。比如，很多原始数据中，<br>包含公民的个人隐私，或者跟国家安全有关的信息。对数据的利用，就要经过大量的清洗工作，不仅成本高，而且牵扯到数据安全和个人隐私。假如企业做，大家肯定不放心，因此需要政府牵头。</p>
+<p>而拆掉数据烟囱，另一个关键的受益者，就是企业。</p>
+<p>比如，对房地产领域来说，假如能拿到水泥、钢铁、玻璃、铝合金等生产数据，汇集起来，就能精准计算出开工到竣工的完整周期信息。再比如，相关的医疗病症数据，对医药研发来说，就非常关键。<br>再比如，电信、燃气、供电之类反映用户行为的数据，对很多企业都有用。而在这回数字中国的顶层规划中，已经明确，要推动公共数据汇聚利用，建设公共卫生、科技、教育等重要领域国家数据资源库。</p>
+<p>北大数字金融研究中心的副主任沈艳老师，还从金融的角度分析过，数字中国顶层设计对中小微企业的促进作用。比如，过去中小微企业要贷款，虽然现在国家已经出台了很多扶持性政策，<br>但是，能否获得贷款，最重要的依据，还是看盈利。这是因为，除了盈利，很难获得其他方面的参考数据。但是，假如这些企业的数据能全面打通呈现，就意味着，在信用度量方面，或许可以建立新的指标，<br>让企业更容易拿到贷款。</p>
+<p>借用沈艳老师的说法，这回政府要解决的重点问题之一，就是公共数据，应该由谁开发、如何汇聚、怎样利用的问题。</p>
+<p>简单说，大数据的关键，就在于一个“大”字。要实现这个“大”，就需要大规划、大设计、大统筹。而要想在安全、公平、高效的前提下，完成这件事，就必须由政府出面，做好顶层设计。</p>
+<p>总结一下，《数字中国建设整体布局规划》，与后面的组建国家数据局，是一脉相承的动作。反映了政府在数字中国建设方面，承担的职能将从在后监管，变成带头统筹，带头建设。<br>而当前的工作重点之一，是打通数据烟囱，盘活存量数据。在这个过程中，企业和个人，都将直接受益。</p>
 
                 
               </div>
@@ -320,8 +342,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>未来已来</div>
-      <div>http://chansonpro.com/2023/04/18/未来已来/</div>
+      <div>读懂“2522”，理解数字中国顶层设计</div>
+      <div>http://chansonpro.com/2023/04/24/数字化/</div>
     </div>
     <div class="license-meta">
       
@@ -333,7 +355,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2023年4月18日</div>
+          <div>2023年4月24日</div>
         </div>
       
       
@@ -365,18 +387,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/04/24/%E6%95%B0%E5%AD%97%E5%8C%96/" title="读懂“2522”，理解数字中国顶层设计">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">读懂“2522”，理解数字中国顶层设计</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/04/16/DISC%E8%A1%8C%E4%B8%BA%E9%A3%8E%E6%A0%BC/" title="DISC">
-                        <span class="hidden-mobile">DISC</span>
+                      <a href="/2023/04/18/%E6%9C%AA%E6%9D%A5%E5%B7%B2%E6%9D%A5/" title="未来已来">
+                        <span class="hidden-mobile">未来已来</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
