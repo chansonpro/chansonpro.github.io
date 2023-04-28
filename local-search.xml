@@ -8,7 +8,7 @@
     <link href="/2023/04/28/%E6%A6%82%E7%8E%87%E7%BB%9F%E8%AE%A1/"/>
     <url>/2023/04/28/%E6%A6%82%E7%8E%87%E7%BB%9F%E8%AE%A1/</url>
     
-    <content type="html"><![CDATA[<h1 id="你真的懂p值吗？"><a href="#你真的懂p值吗？" class="headerlink" title="你真的懂p值吗？"></a>你真的懂p值吗？</h1><p><a href="https://mp.weixin.qq.com/s?__biz=MzAxMDA4NjU3OA==&mid=207134405&idx=1&sn=8a4e661a0cd0fad97d869845f2e4b1a2&scene=21#wechat_redirect">https://mp.weixin.qq.com/s?__biz=MzAxMDA4NjU3OA==&amp;mid=207134405&amp;idx=1&amp;sn=8a4e661a0cd0fad97d869845f2e4b1a2&amp;scene=21#wechat_redirect</a></p>]]></content>
+    <content type="html"><![CDATA[<h1 id="你真的懂p值吗？"><a href="#你真的懂p值吗？" class="headerlink" title="你真的懂p值吗？"></a>你真的懂p值吗？</h1><p><a href="https://mp.weixin.qq.com/s?__biz=MzAxMDA4NjU3OA==&mid=207134405&idx=1&sn=8a4e661a0cd0fad97d869845f2e4b1a2&scene=21#wechat_redirect">https://mp.weixin.qq.com/s?__biz=MzAxMDA4NjU3OA==&amp;mid=207134405&amp;idx=1&amp;sn=8a4e661a0cd0fad97d869845f2e4b1a2&amp;scene=21#wechat_redirect</a></p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs text">结论：<br>1.p值是在假定原假设为真时，得到与样本相同或者更极端的结果的概率。<br>2.p值不是原假设为真的概率，也不是备选假设为假的概率。同样的实验重复做几次，每次得到不同的样本，p值也自然会有区别。<br>3.p值只关心数据与原假设之间有多不一致，p值并不能准确地告诉我们差异的大小<br></code></pre></td></tr></table></figure>]]></content>
     
     
     
